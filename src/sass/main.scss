@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+// NAV //
+
+.nav {
+	overflow: hidden;
+	background-color: white;
+
+	.nav-main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.nav-logo {
+			font-size: 2.6rem;
+
+			a {
+				text-decoration: none;
+				color: rgb(43, 40, 40);
+
+				i {
+					padding-right: 0.3em;
+				}
+
+				p {
+					padding: 1em 0.5em;
+					padding-left: 1.5em;
+				}
+			}
+		}
+
+		.nav-items {
+			padding-right: 3em;
+
+			.nav-item {
+				font-size: 1.6rem;
+				padding: 4em 2em;
+				color: rgb(43, 40, 40);
+				text-decoration: none;
+				transition: background-color 0.3s, color 0.3s;
+			}
+
+			.nav-item:hover {
+				background-color: rgb(43, 40, 40);
+				color: white;
+			}
+		}
+	}
+}
+
+// MEDDIA QUERIES //
+
+@media (min-width: 767px) {
+	.nav {
+		.nav-main {
+			.nav-logo {
+				font-size: 3.6rem;
+			}
+
+			.nav-items {
+				.nav-item {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		.nav-main {
+			.nav-logo {
+				a {
+					p {
+						padding: 1em 0.5em;
+					}
+
+					i {
+						padding-right: 0.3em;
+					}
+				}
+			}
+		}
+	}
+}
