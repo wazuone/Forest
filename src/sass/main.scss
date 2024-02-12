@@ -53,7 +53,6 @@ body {
 			padding-right: 3em;
 
 			.nav-item {
-				font-size: 1.6rem;
 				padding: 4em 2em;
 				color: rgb(43, 40, 40);
 				text-decoration: none;
@@ -76,7 +75,7 @@ body {
 		background: none;
 		border: 1px solid transparent;
 		cursor: pointer;
-		z-index: 10;
+		z-index: 20;
 
 		.burger-box {
 			position: relative;
@@ -118,8 +117,6 @@ body {
 	}
 }
 
-
-
 // BURGER NAV //
 
 .burger-nav {
@@ -132,7 +129,8 @@ body {
 	height: 100vh;
 	background-color: #fff;
 	transform: translate(100%);
-	transition: transform .5s cubic-bezier(0.69, 0.23, 0.58, 1);
+	transition: transform 0.5s cubic-bezier(0.69, 0.23, 0.58, 1);
+	z-index: 10;
 	.burger-items {
 		display: flex;
 		flex-direction: column;
@@ -157,7 +155,7 @@ body {
 			left: 0;
 			background-color: #333;
 			transform: scaleY(0);
-			transition: transform .3s;
+			transition: transform 0.3s;
 			content: '';
 		}
 
@@ -166,7 +164,6 @@ body {
 		}
 	}
 }
-
 
 .active {
 	transform: translate(0);
@@ -186,18 +183,51 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+// HEADER //
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+	width: 100%;
+	padding: 2em;
+	color: #fff;
+	background-image: url('../img/jungle-1807476_640.jpg');
+	background-size: cover;
+	background-position: center 60%;
+	letter-spacing: 1px;
+
+	.header-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+
+	.header-text {
+		z-index: 1;
+
+		p {
+			font-size: 3.2rem;
+			font-weight: 500;
+		}
+
+		h1 {
+			font-size: 2.6rem;
+			font-weight: 300;
+		}
+	}
+}
+
 // MEDDIA QUERIES //
 
 @media (min-width: 767px) {
 	.nav {
 		.nav-main {
 			.nav-logo {
-				font-size: 3.6rem;
-				a {
-					p {
-						padding-left: 1.5em;
-					}
-				}
+				font-size: 3.2rem;
 			}
 
 			.nav-items {
@@ -211,21 +241,44 @@ body {
 			display: none;
 		}
 	}
+
+	.header {
+		background-image: url('../img/jungle-1807476_1920.jpg');
+		.header-text {
+			p {
+				font-size: 4rem;
+			}
+
+			h1 {
+				font-size: 3rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
 	.nav {
 		.nav-main {
 			.nav-logo {
-				a {
-					p {
-						padding: 1em 0.5em;
-					}
+				font-size: 3.6rem;
+			}
 
-					i {
-						padding-right: 0.3em;
-					}
+			.nav-items {
+				.nav-item {
+					font-size: 2rem;
 				}
+			}
+		}
+	}
+
+	.header {
+		.header-text {
+			p {
+				font-size: 4.4rem;
+			}
+
+			h1 {
+				font-size: 3.4rem;
 			}
 		}
 	}
