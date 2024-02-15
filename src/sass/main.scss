@@ -24,6 +24,7 @@ body {
 .nav {
 	overflow: hidden;
 	background-color: white;
+	padding-left: 2em;
 
 	.nav-main {
 		display: flex;
@@ -42,8 +43,7 @@ body {
 				}
 
 				p {
-					padding: 1em 0.5em;
-					padding-left: 1em;
+					padding: 1em 0 1em;
 				}
 			}
 		}
@@ -217,6 +217,55 @@ body {
 		h1 {
 			font-size: 2.6rem;
 			font-weight: 300;
+		}
+	}
+}
+
+// MAIN //////////
+
+// ABOUT US
+.main {
+	.about-us {
+		padding: 2em;
+
+		.title {
+			text-align: center;
+			text-transform: uppercase;
+			padding: 1.3em;
+			font-size: 4.2rem;
+			font-weight: 300;
+		}
+
+		.aboutus-main {
+			display: flex;
+			justify-content: center;
+			align-items: start;
+			width: 100%;
+
+			.aboutus-img {
+				width: 100%;
+				height: 350px;
+				background-image: url('../img/waters-3095682_640.jpg');
+				background-position: center;
+				background-size: cover;
+			}
+
+			.aboutus-text {
+				width: 100%;
+				text-align: left;
+				margin-left: 5em;
+
+				h3 {
+					font-size: 2.6rem;
+					padding-bottom: .5em;
+				}
+
+				p {
+					font-size: 1.6rem;
+					line-height: 2.5em;
+					font-weight: 300;
+				}
+			}
 		}
 	}
 }

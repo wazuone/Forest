@@ -1,4 +1,3 @@
-document.body.style.background = 'grey'
 const nav = document.querySelector('.burger-nav')
 const navBtn = document.querySelector('.burger-btn')
 const burgerItems = document.querySelectorAll('.burger-item')
