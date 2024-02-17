@@ -323,6 +323,10 @@ body {
 			.aboutus-main {
 				flex-direction: row;
 
+				.aboutus-img {
+					background-image: url('../img/waters-3095682_1920.jpg');
+				}
+
 				.aboutus-text {
 				margin-left: 5em;
 				text-align: left;
