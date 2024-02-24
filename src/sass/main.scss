@@ -418,15 +418,26 @@ body {
 					}
 				}
 
-				.choose:hover {
+				.top {
 					background-color: rgba(10, 230, 94, 0.63);
 					color: #000;
 				}
+
+				.choose:hover {
+					background-color: rgba(0, 255, 76, 0.767);
+					color: #000;
+				}
+
+				.choose:hover ~ .top {
+					background-color: #000;
+				}
+
 			}
 
 			.box:hover {
 				transform: scale(1.1);
 			}
+
 		}
 	}
 }

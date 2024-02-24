@@ -2,6 +2,8 @@ const nav = document.querySelector('.burger-nav')
 const navBtn = document.querySelector('.burger-btn')
 const burgerItems = document.querySelectorAll('.burger-item')
 const headerText = document.querySelector('.header-text')
+const choose = document.querySelectorAll('.choose')
+const top = document.querySelector('.top')
 
 const handleNav = () => {
 	nav.classList.toggle('active')
