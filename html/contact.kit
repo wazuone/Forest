@@ -12,7 +12,7 @@
 
     <!-- @include 'nav.kit'-->
 
-    <div class="main">
+    <main class="contact-main">
         <div class="wrapper">
             <h1>kontakt</h1>
             <div class="logo-section">
@@ -21,20 +21,46 @@
             <div class="contact-form">
                 <div class="form-text">
                     <div class="left-section">
-                        <input type="text" placeholder="Imię">
-                        <input type="email" placeholder="Adres e-mail">
-                        <input type="text" placeholder="Tytuł wiadomości">
+                        <div class="mini-section">
+                            <label for="text">Imię</label>
+                            <input type="text" placeholder="Wpisz swoje imię:">
+                        </div>
+                        <div class="mini-section">
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="Wpisz swój adres e-mail:">
+                        </div>
+                        <div class="mini-section">
+                            <label for="text">Tytuł wiadomości</label>
+                            <input type="text" placeholder="Wpisz tytuł wiadomości:">
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <textarea placeholder=" Treść wiadomości"></textarea>
+                    </div>
+                    <button>Wyślij wiadomość</button>
+                </div>
+                <div class="right-section">
+                    <div class="right-section-top">
+                        <h3>Informacje kontaktowe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quidem dolore temporibus
+                            mollitia magni sed in velit ullam dolorum ad.</p>
+                    </div>
+                    <div class="right-section-bottom">
+                        <p><i class="fas fa-phone-alt"></i>+48 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i>forest@group.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Katowice</p>
+                    </div>
+                    <div class="media">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram-square"></i>
                     </div>
                 </div>
-                <div class="form-area">
-                    <textarea placeholder=" Treść wiadomości"></textarea>
-                </div>
 
-                <div class="right-section"></div>
             </div>
         </div>
 
-    </div>
+    </main>
 
 
     <!-- @include 'footer.kit' -->
